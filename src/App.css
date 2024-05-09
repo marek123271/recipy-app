@@ -3,10 +3,27 @@ body{
 }
 .text-slanted{
   font-family: 'Courgette', cursive;
+  
+  
+  
 }
+
 text-orange{
 color:orange;
 }
+
+
 .letter-spacing{
   letter-spacing: 0.5 rem;
+}
+.header-hero {
+  min-height: 100vh; /* Ensure the header covers the full viewport height */
+  color: black;
+  background: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)), url("./Images/food-bcg.jpg") center/cover no-repeat;
+
+}
+.navbar-item {
+  font-size: 200%; /* Increase font size */
+  text-align: left; /* Center align text */
+  margin: 10px 20px; /* Add spacing around each navbar item */
 }
