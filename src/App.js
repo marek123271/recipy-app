@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div>
-      Hello from app
+      Hello from app1
     </div>
   );
 }
