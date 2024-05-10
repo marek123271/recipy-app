@@ -16,6 +16,7 @@ color:orange;
 .letter-spacing{
   letter-spacing: 0.5 rem;
 }
+<<<<<<< HEAD
 .header-hero {
   min-height: 100vh; /* Ensure the header covers the full viewport height */
   color: black;
@@ -27,3 +28,5 @@ color:orange;
   text-align: left; /* Center align text */
   margin: 10px 20px; /* Add spacing around each navbar item */
 }
+=======
+>>>>>>> a8661d8e08155e9902efc83227a237102a93d02f
