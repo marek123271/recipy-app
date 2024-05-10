@@ -32,3 +32,9 @@ color:orange;
 .default-hero{
   background: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)), url("./Images/wrong_site.png") center/cover no-repeat;
 }
+
+.input-group{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
