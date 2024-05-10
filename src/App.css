@@ -17,7 +17,7 @@ color:orange;
   letter-spacing: 0.5 rem;
 }
 
-.header-hero {
+.header-hero,.default-hero{
   min-height: 100vh; /* Ensure the header covers the full viewport height */
   color: black;
   background: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)), url("./Images/food-bcg.jpg") center/cover no-repeat;
@@ -29,4 +29,6 @@ color:orange;
   margin: 10px 20px; /* Add spacing around each navbar item */
 }
 
-
+.default-hero{
+  background: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.3)), url("./Images/wrong_site.png") center/cover no-repeat;
+}

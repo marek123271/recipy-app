@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home.js';
-import Defoult from './pages/Defoult.js';
+import Defoult from './pages/Default.js';
 import Recipes from './pages/Recipes.js';
 import SingleRecipe from './pages/SingleRecipe.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
