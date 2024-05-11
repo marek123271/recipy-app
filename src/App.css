@@ -38,3 +38,14 @@ color:orange;
   justify-content: center;
   align-items: stretch;
 }
+
+.orange-text {
+  color: orange;
+}
+.search-font{
+  
+   font-family: "Cedarville Cursive", cursive;
+  font-weight: bold;
+  font-style: normal;
+}
+

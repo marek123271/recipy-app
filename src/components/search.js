@@ -7,9 +7,11 @@ export default class Search extends Component {
       <div className="container">
         <div className="row">
           <div className="col-10 mx-auto com-md-8 mt-5 text-center">
-            <h1 className="text-slanted text-capitalize">
-              Search recipes with <strong className="text-orange">FoodApp</strong>
+          <h1 className="text-slanted text-capitalize search-font">
+                 Search recipes with <strong className="orange-text">Recipe Book</strong>
             </h1>
+
+
             <form className="mt-4">
               <label htmlFor="search" className="text-capitalize">
                 Type recipes separated by comma
