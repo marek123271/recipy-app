@@ -4,8 +4,8 @@ import RecipeList from '../components/RecipeList';
 
 export default class Recipes extends Component {
   state = {
-    recipes: [], // Initially empty array
-    search: '' // Initially empty string
+    recipes: [],
+    search: ''
   };
 
   handleChange = (e) => {
@@ -33,18 +33,19 @@ export default class Recipes extends Component {
         console.error('Error fetching recipes:', error);
       });
   };
-  
 
   render() {
+    const { recipes } = this.state;
+
     return (
-      <>
+      <div>
         <Search
           search={this.state.search}
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
         />
-        <RecipeList recipes={this.state.recipes} />
-      </>
+        <RecipeList recipes={recipes} />
+      </div>
     );
   }
 }
