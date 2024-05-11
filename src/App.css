@@ -42,6 +42,16 @@ color:orange;
 .orange-text {
   color: orange;
 }
+.orange-textC {
+  color: rgb(91, 77, 52);
+  font-family: cursive; /* Add cursive font family */
+}
+
+.orange-textT{
+  color: rgb(177, 127, 40);
+  font-family: cursive; /* Add cursive font family */
+}
+
 .search-font{
   
    font-family: "Cedarville Cursive", cursive;
