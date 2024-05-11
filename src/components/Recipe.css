@@ -1,0 +1,13 @@
+recipe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    width: calc(33.33% - 20px); /* Adjust width to fit three recipes in a row */
+  }
+  
+  .recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }

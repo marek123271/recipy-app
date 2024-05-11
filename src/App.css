@@ -49,3 +49,23 @@ color:orange;
   font-style: normal;
 }
 
+.recipe-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+.recipe-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.empty-table{
+  position: absolute;
+  width: 150%;
+  margin-left: 1rem;
+  margin-right: auto;
+  margin-top: 3%;
+}
