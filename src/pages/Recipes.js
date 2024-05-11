@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
+import Search from '../components/Search';
 import RecipeList from '../components/RecipeList';
-import Search from '../components/search';
 
 export default class Recipes extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      // Recipes: recipeData, // Assuming recipeData is imported from somewhere
-      search: ''
-    };
-  }
+  state = {
+    recipes: [], // Initially empty array
+    search: '' // Initially empty string
+  };
 
   handleChange = (e) => {
     this.setState({
@@ -19,14 +16,34 @@ export default class Recipes extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission if needed
+    const { search } = this.state;
+    fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search=${search}&key=a136d7a1-48d1-4a85-9321-16fd21e19270`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch recipes');
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.setState({
+          recipes: data.data.recipes
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching recipes:', error);
+      });
   };
+  
 
   render() {
     return (
       <>
-        <Search search={this.state.search} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
-        <RecipeList recipies={this.state.Recipes} />
+        <Search
+          search={this.state.search}
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+        />
+        <RecipeList recipes={this.state.recipes} />
       </>
     );
   }
