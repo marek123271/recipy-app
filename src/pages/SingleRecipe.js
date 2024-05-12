@@ -35,11 +35,12 @@ const SingleRecipe = () => {
             style={{
               display: 'block',
               marginLeft: 'auto',
-              marginTop: '-50px',
+              marginRight: '3%',
+              marginTop: '0%',
               float: 'right',
-              width: '40%',
-              height: '40%',
-              borderRadius: '50px'
+              width: '45%',
+              height: '45%',
+              borderRadius: '90px'
             }}
           />
           <button
