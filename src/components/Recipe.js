@@ -12,7 +12,8 @@ export default class Recipe extends Component {
         <img src={recipe.image_url} alt={recipe.title} className="recipe-image" />
         <h6 className="orange-textC">Provided by {recipe.publisher}</h6>
         <div className='card-footer'>
-          <Link to={`/recipes/${recipe.id}`} className="btn btn-success">View Details</Link>
+        <Link to={`/recipes/${recipe.id}`} className="btn btn-success" target="_blank">View Details</Link>
+
         </div>
       </div>
     );

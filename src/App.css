@@ -120,3 +120,21 @@ color:orange;
 
 
 
+
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: hsl(0, 21%, 38%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  opacity: 0.8;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../src/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home.js';
 import Defoult from './pages/Default.js';

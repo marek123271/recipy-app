@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
-
-const SingleRecipe = () => {
+const SingleRecipe = ({ searchQuery }) => {
   const { id } = useParams();
   const [recipeData, setRecipeData] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchRecipe = async () => {
@@ -14,7 +14,7 @@ const SingleRecipe = () => {
           throw new Error('Failed to fetch recipe data');
         }
         const data = await response.json();
-        setRecipeData(data.data.recipe); // Assuming 'data' structure matches your API response
+        setRecipeData(data.data.recipe);
       } catch (error) {
         console.error('Error fetching recipe data:', error);
       }
@@ -22,6 +22,10 @@ const SingleRecipe = () => {
 
     fetchRecipe();
   }, [id]);
+
+  const handleGoBack = () => {
+    navigate('/recipes', { state: { searchQuery } });
+  };
 
   return (
     <div>
