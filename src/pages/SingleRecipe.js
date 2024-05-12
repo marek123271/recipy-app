@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+
 const SingleRecipe = () => {
   const { id } = useParams();
   const [recipeData, setRecipeData] = useState(null);
@@ -24,12 +25,40 @@ const SingleRecipe = () => {
 
   return (
     <div>
-      <h4>SingleRecipe</h4>
       {recipeData ? (
         <div>
-          <p>Recipe ID: {id}</p>
-          <p>Recipe Title: {recipeData.title}</p>
-          {/* Render other recipe details as needed */}
+          <p className='orange-textCT'>{recipeData.title}</p>
+          <img
+            className='recipe-image2'
+            src={recipeData.image_url}
+            alt={recipeData.title}
+            style={{
+              display: 'block',
+              marginLeft: 'auto',
+              marginTop: '-50px',
+              float: 'right',
+              width: '40%',
+              height: '40%',
+              borderRadius: '50px'
+            }}
+          />
+          <button
+            className='btnSource'
+            onClick={() => window.open(recipeData.source_url, '_blank')}
+          >
+            Recipe Source
+          </button>
+          <div className='text'>
+            <p className='orange-textC'>servings: {recipeData.servings}</p>
+            <p className='orange-textC'>cooking time: {recipeData.cooking_time}</p>
+            <h1 className='orange-textCI'>ingredients</h1>
+            <ul className='ingredients'>
+              {recipeData.ingredients.map((ingredient, index) => (
+                <li key={index}>{ingredient.description}</li>
+              ))}
+            </ul>
+          </div>
+         
         </div>
       ) : (
         <p>Loading...</p>

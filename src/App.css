@@ -46,13 +46,30 @@ color:orange;
   color: rgb(14, 13, 13);
   font-family: cursive; /* Add cursive font family */
   font-size: 1.3rem;
+  margin-left: 5%;
+}
+orange-textCI{
+  color: rgb(14, 13, 13);
+  font-family: cursive; /* Add cursive font family */
+  font-size: 1.6rem;
+  margin-left: 10%;
 }
 
 .orange-textT{
   color: rgb(18, 18, 17);
   font-family: cursive; /* Add cursive font family */
 }
+.orange-textCT{
+  color: rgb(18, 18, 17);
+  font-family: cursive; /* Add cursive font family */
+  font-size: xxx-large;
+}
 
+
+.ingredients{
+  font-size: large;
+  margin-left: 5%;
+}
 .search-font{
   
    font-family: "Cedarville Cursive", cursive;
@@ -69,10 +86,11 @@ color:orange;
 }
 
 .recipe-image {
-  max-width: 100%;
+  max-width: 150%;
   height: auto;
   border-radius: 5px;
 }
+
 .empty-table{
   position: absolute;
   width: 150%;
@@ -80,3 +98,21 @@ color:orange;
   margin-right: auto;
   margin-top: 3%;
 }
+
+
+.btnSource {
+  background-color: #ff8800;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end; /* Align items to the end of the container (right side) */
+  margin-top: 20rem; /* Add space between the button and other content */
+  margin-left: 55rem; /* Move the button to the right */
+}
+.text{
+  margin-top: -25%;
+}
+
+
