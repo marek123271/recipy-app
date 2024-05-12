@@ -45,6 +45,7 @@ color:orange;
 .orange-textC {
   color: rgb(14, 13, 13);
   font-family: cursive; /* Add cursive font family */
+  font-size: 1.3rem;
 }
 
 .orange-textT{

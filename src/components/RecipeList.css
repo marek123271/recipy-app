@@ -22,3 +22,9 @@
 .recipe:hover{
   background-color: rgb(186, 220, 204);
 }
+
+.card-footer{
+  color: #964b00;
+  font-family: cursive; /* Add cursive font family */
+  text-decoration: none;
+}
