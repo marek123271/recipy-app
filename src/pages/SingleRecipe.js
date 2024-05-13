@@ -9,6 +9,7 @@ const SingleRecipe = ({ searchQuery }) => {
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
+        if (!id) return; // If id is falsy, return without fetching data
         const response = await fetch(`https://forkify-api.herokuapp.com/api/v2/recipes/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch recipe data');
@@ -19,6 +20,7 @@ const SingleRecipe = ({ searchQuery }) => {
         console.error('Error fetching recipe data:', error);
       }
     };
+    
 
     fetchRecipe();
   }, [id]);
