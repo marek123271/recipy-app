@@ -22,7 +22,7 @@ export default class Recipes extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { search } = this.state;
-    fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search=${search}&key=a136d7a1-48d1-4a85-9321-16fd21e19270`)
+    fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search=${search}&key=${process.env.REACT_APP_API_KEY}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch recipes');
