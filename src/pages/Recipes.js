@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Search from '../components/Search';
+import Search from '../components/search';
 import RecipeList from '../components/RecipeList';
 import SingleRecipe from '../pages/SingleRecipe'; // Import SingleRecipe component
 import '../App.css';
@@ -22,7 +22,9 @@ export default class Recipes extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { search } = this.state;
-    fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search=${search}&key=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search=${search}&key=0890e1ca-b196-4026-b5ef-6c22ac0f7f32
+
+    `)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch recipes');
