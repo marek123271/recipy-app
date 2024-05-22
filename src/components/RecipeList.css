@@ -1,0 +1,30 @@
+/* RecipeList.css */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Set columns to fill available space, with a minimum width of 300px */
+  grid-gap: 20px; /* Add gap between grid items for better spacing */
+}
+
+/* Recipe.css */
+.recipe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.recipe img {
+  width: 100%; /* Make sure image fills the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Apply border-radius to the image */
+  border: 1px solid #ccc; /* Add border to the image */
+}
+.recipe:hover{
+  background-color: rgb(186, 220, 204);
+}
+
+.card-footer{
+  color: #964b00;
+  font-family: cursive; /* Add cursive font family */
+  text-decoration: none;
+}
