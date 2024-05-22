@@ -2,6 +2,7 @@
   "name": "recipy-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://marek123271.github.io/recipy-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,10 +12,12 @@
     "react-dom": "^18.3.1",
     "react-lazyload": "^3.2.1",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
