@@ -10,7 +10,7 @@ import Navbar from './components/navbar.js'; // Make sure the file name is corre
 
 function App() {
   return (
-    <Router>
+    <Router basename="/recipy-app">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
