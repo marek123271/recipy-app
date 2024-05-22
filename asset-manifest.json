@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/recipy-app/static/css/main.45a17d6f.css",
+    "main.js": "/recipy-app/static/js/main.3a2cd714.js",
+    "static/js/453.e05819cc.chunk.js": "/recipy-app/static/js/453.e05819cc.chunk.js",
+    "static/media/wrong_site.png": "/recipy-app/static/media/wrong_site.00c4ae2e4b0c343c1c3d.png",
+    "static/media/food-bcg.jpg": "/recipy-app/static/media/food-bcg.6e77546e98bd0ac24ae2.jpg",
+    "static/media/empty_table3.jpg": "/recipy-app/static/media/empty_table3.c42a2eb6ad5f11cacac9.jpg",
+    "static/media/food-delivery.png": "/recipy-app/static/media/food-delivery.058a6fbd07d06cdee9b7.png",
+    "index.html": "/recipy-app/index.html",
+    "main.45a17d6f.css.map": "/recipy-app/static/css/main.45a17d6f.css.map",
+    "main.3a2cd714.js.map": "/recipy-app/static/js/main.3a2cd714.js.map",
+    "453.e05819cc.chunk.js.map": "/recipy-app/static/js/453.e05819cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45a17d6f.css",
+    "static/js/main.3a2cd714.js"
+  ]
+}
