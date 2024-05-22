@@ -7,11 +7,11 @@ export default class Defoult extends Component {
     return (
       <Header title="404" styleClass='default-hero'>
         <h2 className='text-light text-uppercase'>
-          Oops! Page not found
+          Welcome to my Recipy App
         </h2>
         <Link to='/'
         className='text-uppercase btn btn-secondary btn-lg mt-3'>
-          Go back home
+          Go to home
         </Link>
       </Header>
        
